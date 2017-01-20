@@ -5,4 +5,11 @@ class ExamplesController < ApplicationController
     puts @name
     render "name.html.erb"
   end
+
+  def guess
+    @guess = params[:guess]
+    puts "below is your guess"
+    puts @guess
+    render "guess.html.erb"
+  end
 end
