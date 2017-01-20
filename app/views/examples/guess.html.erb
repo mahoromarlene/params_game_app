@@ -1,9 +1,11 @@
 <h1>Your guess is: <%= @guess %></h1>
 
-<% if @guess = result %>
-  puts "You won"
-<% elsif @guess > result %>
+<% result = 36 %>
+
+<% if @guess > result %>
   puts "guess lower"
-<%elsif @guess < result %>
+<% elsif @guess < result %>
   puts "guess higher"
+<% elsif @guess = result %>
+  puts "You won"
 <% end %>
