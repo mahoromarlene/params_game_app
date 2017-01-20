@@ -1,0 +1,12 @@
+<h1>The result is <%= @message %></h1>
+
+
+<% guessed_number = 40 %>
+
+<% if @message > guessed_number %>
+  puts "guess lower"
+<% elsif @message < guessed_number %>
+  puts "guess higher"
+<% elsif @message = guessed_number %>
+  puts "You won"
+<% end %>

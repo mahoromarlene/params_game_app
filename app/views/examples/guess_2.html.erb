@@ -1,0 +1,11 @@
+<h1>Your guess is: <%= @guess_segment %></h1>
+
+<% guessed_number = 40 %>
+
+<% if @guess_segment > guessed_number %>
+  puts "guess lower"
+<% elsif @guess_segment < guessed_number %>
+  puts "guess higher"
+<% elsif @guess_segment = guessed_number %>
+  puts "You won"
+<% end %>
